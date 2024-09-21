@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Added fallback font */
+}
+
+p {
+    line-height: 1.5; /* Adjusted for better readability */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Ensures links inherit text color */
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Ensures images maintain aspect ratio */
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Utilities */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #693F23; 
+    color: white;
+    padding: 20px; /* Added padding for better spacing */
+    background-position: top center;
+    text-align: center;
+    line-height: 1;
+}
+
+header img {
+    width: 30%;
+}
+
+.about-container {
+    display: flex; /* Use flexbox for consistent layout */
+    flex-direction: row;
+    border: 2px solid brown;
+    padding: 20px; /* Added padding */
+}
+
+.pet {
+    background-color: antiquewhite;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px; /* Added margin for spacing between pet cards */
+}
+
+.highlight { /* Fixed class name from .hightlight */
+    border-left: 10px solid yellow;
+}
+
+/* About Us Section */
+.more-about-item {
+    background-color: #cbb79c;
+    color: antiquewhite;
+    margin-right: 8px;
+    padding: 20px; /* Added padding for spacing */
+}
+
+.about-item-text {
+    padding: 30px;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    flex-direction: column; /* Adjust for better layout */
+    margin-top: 20px; /* Added spacing */
+}
+
+.service-item {
+    background-color: #f9f9f9; /* Light background for services */
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 10px 0; /* Added margin for spacing between service items */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: #693F23; /* Example background color */
+    padding: 20px;
+    text-align: center;
+}
+.email-link{
+    display: flex;
+    justify-content: left;
+    height: 0;
+}
+.email-link :hover{
+    transform: scale(1.1);
+    color: ;
+}
+.social-icons {
+    display: flex;
+    justify-content: right;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons img {
+    width: 30px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+

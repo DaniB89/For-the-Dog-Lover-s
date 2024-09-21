@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <title>Register a New Service</title>
+</head>
+<body>
+    <header>
+        <div class="main-bar">
+            <h1>For The Dog Lover's</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h2 class="text-center">Register a New Service</h2>
+        <div class="form-container">
+            <!-- Description Input -->
+            <div class="mb-4">
+                <label class="form-label" for="txtDescription">Description</label>
+                <input class="form-control" id="txtDescription" type="text" required>
+                <small class="descriptionValidationMsg text-danger " style="display: inline;">This is a required field</small>
+            </div>
+
+            <!-- Price Input -->
+            <div class="mb-4">
+                <label class="form-label" for="txtPrice">Price</label>
+                <input class="form-control" id="txtPrice" type="number" required />
+                <small class="descriptionValidationMsg text-danger" style="display: inline;">This is a required field</small>
+            </div>
+
+            <div>
+                <!-- Register Button -->
+                <button onclick="register()" class="btn btn-dark mb-4">Register</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./plugins/jQuery.js"></script>
+    <script src="./scripts/storeManager.js"></script>
+    <script src="./scripts/services.js"></script>
+</body>
+</html>
